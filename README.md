@@ -6,7 +6,7 @@ A responsive dashboard UI built using [shadcn/ui](https://ui.shadcn.com), React,
 
 ## 🔗 Live Demo
 
-🌐 [View Live on Vercel](https://your-dashboard-demo.vercel.app)
+🌐 [View Live on Vercel](https://abun-two.vercel.app/)
 
 ---
 
