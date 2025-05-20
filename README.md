@@ -1,54 +1,44 @@
-# React + TypeScript + Vite
+# 🧩 React Dashboard UI with shadcn/ui - abun
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive dashboard UI built using [shadcn/ui](https://ui.shadcn.com), React, Vite, Tailwind CSS. This was created as part of a frontend developer test assignment to demonstrate layout structuring, reusable component usage, responsiveness, and clean code practices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
 
-## Expanding the ESLint configuration
+🌐 [View Live on Vercel](https://your-dashboard-demo.vercel.app)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🖼️ Features
+
+- 🧭 Sidebar navigation using `shadcn/ui` Sidebar Block (`sidebar-07`)
+- 🔎 Dummy filters and sorting on table columns
+- ✅ Clean, reusable components
+- 📱 Fully responsive across screen sizes
+- 🗂️ Organized file structure for scalability
+
+---
+
+## 🛠️ Tech Stack
+
+```text
+| Tool              | Purpose                          |
+|-------------------|----------------------------------|
+| React + Vite      | Frontend framework + build tool  |
+| Tailwind CSS      | Utility-first styling            |
+| shadcn/ui         | Pre-built accessible UI blocks   |
+| TypeScript        | (Optional) for type safety       |
 ```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+git clone https://github.com/wali55/abun.git
+cd abun
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+npm install
+
+npm run dev
 ```
